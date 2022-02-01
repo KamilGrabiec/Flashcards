@@ -56,10 +56,8 @@ function drawFlashcard() {
   console.log(cardNumber);
   console.log(cardsDescriptions[cardNumber]);
 
-  const div = document.getElementById('practice');
-  const drawDescription = document.createElement('h3');
+  const drawDescription = document.getElementById('drawDescription');
   drawDescription.innerHTML = `Description: ${cardsDescriptions[cardNumber]}`;
-  div.appendChild(drawDescription);
 }
 draw.addEventListener('click', drawFlashcard);
 
